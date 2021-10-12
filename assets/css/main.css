@@ -1,0 +1,39 @@
+footer {
+  background-color: red;
+}
+
+footer {
+  padding: 20px 40px;
+  background-color: #353534;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 8px;
+}
+footer a:last-child {
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+header a {
+  margin-right: 137px;
+}
+
+/*# sourceMappingURL=main.css.map */
