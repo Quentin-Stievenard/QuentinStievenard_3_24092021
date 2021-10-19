@@ -1,0 +1,30 @@
+header img {
+  margin-left: 140px !important;
+}
+
+.background-restaurant {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@mixin restaurant-container {
+  background-color: $light-grey;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: $light-grey;
+    box-shadow: none;
+    h3 {
+      font-family: "Shrikhand", cursive;
+      font-size: 30px;
+    }
+  }
+}
+
+.restaurant-container {
+  @include restaurant-container;
+}

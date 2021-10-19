@@ -6,6 +6,14 @@
   font-size: 22px;
 }
 
+.favorite {
+  font-size: 28px !important;
+}
+.favorite i:hover {
+  background: #ff79da;
+  background: linear-gradient(7deg, #ff79da 11%, #9356dc 47%);
+}
+
 html,
 body,
 div,
@@ -293,13 +301,6 @@ header img {
   font-weight: 100;
   color: black;
 }
-.restaurant figcaption .favorite {
-  font-size: 28px;
-}
-.restaurant figcaption .favorite i:hover {
-  background: #ff79da;
-  background: linear-gradient(7deg, #ff79da 11%, #9356dc 47%);
-}
 .restaurant .new {
   position: absolute;
   background-color: #98e2ce;
@@ -309,6 +310,32 @@ header img {
   font-size: 22px;
   padding: 10px 20px;
   border-radius: 4px;
+}
+
+header img {
+  margin-left: 140px !important;
+}
+
+.background-restaurant {
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.restaurant-container {
+  background-color: #f6f6f6;
+}
+.restaurant-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+  box-shadow: none;
+}
+.restaurant-container header h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

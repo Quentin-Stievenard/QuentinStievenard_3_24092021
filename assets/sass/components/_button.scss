@@ -9,3 +9,15 @@
   border-radius: 30px;
   font-size: 22px;
 }
+
+.favorite {
+  font-size: 28px !important;
+  i:hover {
+    background: rgb(255, 121, 218);
+    background: linear-gradient(
+      7deg,
+      rgba(255, 121, 218, 1) 11%,
+      rgba(147, 86, 220, 1) 47%
+    );
+  }
+}
