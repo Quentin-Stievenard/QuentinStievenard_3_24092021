@@ -36,3 +36,38 @@
 .index-container {
   @include index-container;
 }
+
+@mixin fonctionnement {
+  padding: 30px 20px;
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .menu-item {
+    display: flex;
+    margin-top: 20px;
+    background-color: $light-grey;
+    padding: 30px;
+    border-radius: 20px;
+    p {
+      margin-left: 16px;
+      font-size: 18px;
+    }
+
+    i {
+      color: $color-icon-home;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $menu-item-hover;
+      i {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.fonctionnement {
+  @include fonctionnement;
+}

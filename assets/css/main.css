@@ -1,7 +1,8 @@
 .home-button {
-  background: #ff79da;
   background: linear-gradient(171deg, #ff79da 17%, #9356dc 57%);
   color: white;
+  padding: 15px;
+  border-radius: 30px;
 }
 
 html,
@@ -112,7 +113,6 @@ body {
   line-height: 1;
 }
 
-ol,
 ul {
   list-style: none;
 }
@@ -147,39 +147,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.location {
-  font-size: 20px;
-  background-color: #eaeaea;
-  display: flex;
-  justify-content: center;
-  padding: 15px;
-  box-sizing: border-box;
-}
-.location i {
-  margin-right: 20px;
-}
-
-.index-container .top-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f6f6f6;
-  padding: 45px 50px;
-}
-.index-container .top-main h3 {
-  font-size: 35px;
-  text-align: center;
-  font-weight: 600;
-}
-.index-container .top-main p {
-  font-size: 20px;
-  color: #646565;
-  text-align: center;
-  margin-top: 18px;
-  margin-bottom: 25px;
 }
 
 footer {
@@ -219,7 +186,69 @@ header {
   padding: 25px 0px;
 }
 header img {
-  margin-left: 145px;
+  margin-left: 110px;
+}
+
+.location {
+  font-size: 20px;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.location i {
+  margin-right: 20px;
+}
+
+.index-container .top-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  padding: 45px 50px;
+}
+.index-container .top-main h3 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+.index-container .top-main p {
+  font-size: 20px;
+  color: #646565;
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.fonctionnement {
+  padding: 30px 20px;
+}
+.fonctionnement h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.fonctionnement .menu-item {
+  display: flex;
+  margin-top: 20px;
+  background-color: #f6f6f6;
+  padding: 30px;
+  border-radius: 20px;
+}
+.fonctionnement .menu-item p {
+  margin-left: 16px;
+  font-size: 18px;
+}
+.fonctionnement .menu-item i {
+  color: #7d7d7d;
+}
+.fonctionnement .menu-item:hover {
+  cursor: pointer;
+  background-color: #f6edff;
+}
+.fonctionnement .menu-item:hover i {
+  color: #9356dc;
 }
 
 /*# sourceMappingURL=main.css.map */

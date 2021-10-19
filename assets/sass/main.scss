@@ -1,7 +1,11 @@
 @import "./utils/variables";
+
 @import "./components/button";
+
 @import "./base/reset";
-@import "./pages/index";
-@import "./pages/restaurant";
+
 @import "./layout/footer";
 @import "./layout/header";
+
+@import "./pages/index";
+@import "./pages/restaurant";

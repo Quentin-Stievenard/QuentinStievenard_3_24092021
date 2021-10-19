@@ -1,9 +1,10 @@
 .home-button {
-  background: rgb(255, 121, 218);
   background: linear-gradient(
     171deg,
     rgba(255, 121, 218, 1) 17%,
     rgba(147, 86, 220, 1) 57%
   );
   color: white;
+  padding: 15px;
+  border-radius: 30px;
 }
