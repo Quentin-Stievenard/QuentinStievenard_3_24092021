@@ -198,7 +198,8 @@ footer a:last-child {
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
   color: white;
   margin-bottom: 25px;
 }
@@ -327,7 +328,11 @@ header img {
 }
 
 header img {
-  margin-left: 100px !important;
+  margin-left: 85px !important;
+}
+
+header a {
+  padding-left: 20px;
 }
 
 .background-restaurant {
