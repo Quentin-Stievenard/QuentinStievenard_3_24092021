@@ -8,10 +8,20 @@
 
 .favorite {
   font-size: 28px !important;
+  cursor: pointer;
 }
 .favorite i:hover {
   background: #ff79da;
   background: linear-gradient(7deg, #ff79da 11%, #9356dc 47%);
+}
+
+.commande {
+  background: linear-gradient(171deg, #ff79da 17%, #9356dc 57%);
+  color: white;
+  padding: 15px 45px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-left: 27%;
 }
 
 html,
@@ -156,6 +166,10 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
 }
 
 footer {
@@ -313,7 +327,7 @@ header img {
 }
 
 header img {
-  margin-left: 140px !important;
+  margin-left: 100px !important;
 }
 
 .background-restaurant {
@@ -324,6 +338,9 @@ header img {
 
 .restaurant-container {
   background-color: #f6f6f6;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .restaurant-container header {
   display: flex;
@@ -336,6 +353,64 @@ header img {
 .restaurant-container header h3 {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
+}
+.restaurant-container .entree h3,
+.restaurant-container .plat h3,
+.restaurant-container .dessert h3 {
+  font-size: 20px;
+  border-bottom: 3px solid #99e2d0;
+  width: 13%;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+.restaurant-container .dessert,
+.restaurant-container .plat,
+.restaurant-container .entree {
+  margin-bottom: 50px;
+}
+.restaurant-container ul {
+  box-sizing: border-box;
+}
+.restaurant-container li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 4px rgba(14, 21, 28, 0.04), 1px 4px 40px rgba(42, 64, 84, 0.09);
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+.restaurant-container li:hover {
+  padding-right: 72px;
+  transition: all 0.3s;
+}
+.restaurant-container li:hover .check {
+  display: block;
+}
+.restaurant-container li h4 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.restaurant-container li p {
+  font-size: 16px;
+}
+.restaurant-container li .price {
+  font-size: 16px;
+  font-weight: 700;
+}
+.restaurant-container li .check {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #99e2d0;
+  padding: 17px 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

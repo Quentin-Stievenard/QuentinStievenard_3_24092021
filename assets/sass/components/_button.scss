@@ -12,6 +12,7 @@
 
 .favorite {
   font-size: 28px !important;
+  cursor: pointer;
   i:hover {
     background: rgb(255, 121, 218);
     background: linear-gradient(
@@ -20,4 +21,13 @@
       rgba(147, 86, 220, 1) 47%
     );
   }
+}
+
+.commande {
+  background: linear-gradient(171deg, #ff79da 17%, #9356dc 57%);
+  color: white;
+  padding: 15px 45px;
+  border-radius: 30px;
+  font-size: 18px;
+  margin-left: 27%;
 }
