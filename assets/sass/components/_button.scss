@@ -16,13 +16,22 @@
 .favorite {
   font-size: 28px !important;
   cursor: pointer;
-  i:hover {
-    background: rgb(255, 121, 218);
-    background: linear-gradient(
-      7deg,
-      rgba(255, 121, 218, 1) 11%,
-      rgba(147, 86, 220, 1) 47%
-    );
+  border: 0 solid transparent;
+  position: relative;
+  .empty {
+    transition: opacity 0.3s ease-in-out;
+  }
+  .full {
+    transition: color 0.2s ease-in-out;
+    position: absolute;
+    color: white;
+    border: 0 solid transparent;
+    right: 0px;
+    opacity: 0%;
+    &:hover {
+      color: $primary-color;
+      opacity: 100%;
+    }
   }
 }
 

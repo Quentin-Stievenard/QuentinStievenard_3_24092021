@@ -17,6 +17,9 @@ footer {
     text-decoration: none;
     color: white;
     margin-bottom: 8px;
+    &:hover {
+      color: white;
+    }
   }
   a:last-child {
     margin-bottom: 0;

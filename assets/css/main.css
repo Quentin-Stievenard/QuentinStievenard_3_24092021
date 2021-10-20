@@ -12,10 +12,23 @@
 .favorite {
   font-size: 28px !important;
   cursor: pointer;
+  border: 0 solid transparent;
+  position: relative;
 }
-.favorite i:hover {
-  background: #ff79da;
-  background: linear-gradient(7deg, #ff79da 11%, #9356dc 47%);
+.favorite .empty {
+  transition: opacity 0.3s ease-in-out;
+}
+.favorite .full {
+  transition: color 0.2s ease-in-out;
+  position: absolute;
+  color: white;
+  border: 0 solid transparent;
+  right: 0px;
+  opacity: 0%;
+}
+.favorite .full:hover {
+  color: #9356dc;
+  opacity: 100%;
 }
 
 .commande {
@@ -200,6 +213,9 @@ footer a {
   color: white;
   margin-bottom: 8px;
 }
+footer a:hover {
+  color: white;
+}
 footer a:last-child {
   margin-bottom: 0;
 }
@@ -218,7 +234,7 @@ header {
   padding: 25px 0px;
 }
 header img {
-  margin-left: 147px;
+  margin-left: 115px;
 }
 
 .location {
@@ -334,11 +350,11 @@ header img {
   border-radius: 4px;
 }
 
-header img {
+.restaurant-page header img {
   margin-left: 85px !important;
 }
 
-header a {
+.restaurant-page header a {
   padding-left: 20px;
 }
 
