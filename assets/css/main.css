@@ -5,6 +5,9 @@
   border-radius: 30px;
   font-size: 22px;
 }
+.home-button:hover {
+  color: white !important;
+}
 
 .favorite {
   font-size: 28px !important;
@@ -22,6 +25,10 @@
   border-radius: 30px;
   font-size: 18px;
   margin-left: 27%;
+  cursor: pointer;
+}
+.commande:hover {
+  color: white !important;
 }
 
 html,
