@@ -55,8 +55,11 @@
   border: 0 solid transparent;
   position: relative;
 }
-.favorite .empty {
-  transition: opacity 0.3s ease-in-out;
+.favorite .empty:hover {
+  opacity: 1;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
 }
 .favorite .full {
   transition: color 0.2s ease-in-out;
@@ -65,9 +68,12 @@
   border: 0 solid transparent;
   right: 0px;
   opacity: 0%;
+  transition: all 0.3s;
 }
 .favorite .full:hover {
-  color: #9356dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 100%;
 }
 
@@ -541,9 +547,21 @@ header img {
 .restaurant-container li h4 {
   font-size: 19px;
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .restaurant-container li p {
   font-size: 16px;
+}
+.restaurant-container li .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .restaurant-container li .price {
   font-size: 16px;
