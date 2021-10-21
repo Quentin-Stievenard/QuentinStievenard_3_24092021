@@ -138,6 +138,11 @@
     border-radius: 16px;
     margin-bottom: 16px;
     position: relative;
+    transition: all 0.3s;
+  }
+
+  li:hover {
+    transform: scale(1.05);
   }
 
   li:nth-child(2n) {
