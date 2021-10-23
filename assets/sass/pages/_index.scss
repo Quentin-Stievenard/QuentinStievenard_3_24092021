@@ -49,6 +49,23 @@
   ol {
     display: flex;
     align-items: center;
+    list-style: none;
+    counter-reset: compteListe;
+  }
+
+  ol li::before {
+    counter-increment: compteListe 1;
+    content: counter(compteListe) " ";
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    background: #9356dc;
+    position: absolute;
+    left: -15px;
   }
   .menu-item {
     display: flex;
@@ -59,6 +76,7 @@
     width: 100%;
     margin-left: 16px;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    position: relative;
     &:first-child {
       margin-left: 0 !important;
     }
@@ -76,6 +94,15 @@
       i {
         color: $primary-color;
       }
+    }
+  }
+  @media (max-width: 922px) {
+    ol {
+      flex-direction: column;
+    }
+    .menu-item {
+      box-sizing: border-box;
+      margin-left: 0 !important;
     }
   }
   @media (max-width: 599px) {
@@ -198,6 +225,7 @@
       border-radius: 16px;
       margin-bottom: 16px;
       position: relative;
+      margin-left: 0 !important;
     }
     figure img {
       width: 100%;

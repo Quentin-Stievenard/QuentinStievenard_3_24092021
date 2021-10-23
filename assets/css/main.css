@@ -1,3 +1,155 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0 !important;
+}
+
+ul {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .delay-0 {
   animation-delay: 0s !important;
 }
@@ -164,154 +316,6 @@
     transform: rotate(360deg);
   }
 }
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  margin: 0 !important;
-}
-
-ul {
-  list-style: none !important;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-  color: black;
-}
-
 footer {
   padding: 20px 40px;
   background-color: #353534;
@@ -398,6 +402,22 @@ header {
 .fonctionnement ol {
   display: flex;
   align-items: center;
+  list-style: none;
+  counter-reset: compteListe;
+}
+.fonctionnement ol li::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  background: #9356dc;
+  position: absolute;
+  left: -15px;
 }
 .fonctionnement .menu-item {
   display: flex;
@@ -408,6 +428,7 @@ header {
   width: 100%;
   margin-left: 16px;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  position: relative;
 }
 .fonctionnement .menu-item:first-child {
   margin-left: 0 !important;
@@ -425,6 +446,15 @@ header {
 }
 .fonctionnement .menu-item:hover i {
   color: #9356dc;
+}
+@media (max-width: 922px) {
+  .fonctionnement ol {
+    flex-direction: column;
+  }
+  .fonctionnement .menu-item {
+    box-sizing: border-box;
+    margin-left: 0 !important;
+  }
 }
 @media (max-width: 599px) {
   .fonctionnement {
@@ -539,6 +569,7 @@ header {
     border-radius: 16px;
     margin-bottom: 16px;
     position: relative;
+    margin-left: 0 !important;
   }
   .restaurant figure img {
     width: 100%;
@@ -592,9 +623,9 @@ header {
 }
 
 .background-restaurant {
-  width: 100% !important;
   object-fit: cover;
   z-index: -1;
+  height: 1200px;
   width: 100%;
   position: absolute;
   -webkit-transform-origin: bottom;
@@ -602,8 +633,8 @@ header {
   transform-origin: bottom;
 }
 .background-restaurant img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -634,6 +665,7 @@ header {
   width: 100%;
   max-width: 800px;
   margin: 0px auto;
+  margin-top: 70px;
   padding: 15px 15px 0% 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,7 +674,6 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative;
   top: 150px;
   background-color: #e5e5e5;
   border-radius: 15px 15px 0px 0px;
@@ -664,10 +695,22 @@ header {
 .restaurant-container .plat h3,
 .restaurant-container .dessert h3 {
   font-size: 20px;
-  border-bottom: 3px solid #99e2d0;
-  width: 13%;
+  display: inline-block;
   padding-bottom: 6px;
   margin-bottom: 20px;
+  position: relative;
+}
+.restaurant-container .entree h3::after,
+.restaurant-container .plat h3::after,
+.restaurant-container .dessert h3::after {
+  content: "";
+  display: inline-block;
+  height: 3px;
+  width: 70%;
+  position: absolute;
+  background: #99e2d0;
+  left: 0;
+  bottom: 0;
 }
 .restaurant-container .dessert,
 .restaurant-container .plat,
@@ -695,13 +738,14 @@ header {
   border-radius: 8px;
   cursor: pointer;
   position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 .restaurant-container li:hover {
   padding-right: 72px;
-  transition: all 0.3s;
 }
 .restaurant-container li:hover .check {
-  display: block;
+  right: 0;
 }
 .restaurant-container li:hover .check i {
   -webkit-animation: rotate-center 0.6s ease-in-out reverse both;
@@ -712,10 +756,11 @@ header {
 }
 .restaurant-container li h4 {
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  padding-bottom: 10px;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
@@ -735,14 +780,15 @@ header {
 }
 .restaurant-container li .check {
   position: absolute;
-  right: 0;
+  right: -60px;
   top: 0;
   background-color: #99e2d0;
-  padding: 17px 20px;
+  padding: 23px 20px;
   font-size: 20px;
   color: white;
   border-radius: 0 8px 8px 0;
-  display: none;
+  display: block;
+  transition: all 0.5s;
 }
 @media (max-width: 599px) {
   .restaurant-container {
